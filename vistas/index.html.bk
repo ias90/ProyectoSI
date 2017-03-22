@@ -90,7 +90,7 @@
     
    <p>          </p>    
     
-     <form action="https://prueba2-ivanarno.c9users.io/vistas" method="POST" >
+     <form action="https://delta-16172si-ias90.c9users.io/vistas" method="POST" >
     <input type="submit" value="Visitas" name="Submit"  />
 </form>
 

@@ -1,22 +1,31 @@
+PROYECTO DE SISTEMAS DE INFORMACION
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+EQUIPO DELTA: RICARDO ALUSTIZA IVAN ARNO RAMON BRITO
+
+..... BLA
+
+.......... BLA
 
 
-Welcome to your Node.js project on Cloud9 IDE!
 
-This chat example showcases how to use `socket.io` with a static `express` server.
 
-## Running the server
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+mysql-ctl cli para levntar la base de datos
 
-2) Alternatively you can launch the app from the Terminal:
+github
 
-    $ node server.js
 
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+git config --global user.name "ias90"
+
+git config --global user.email "ivan90_jr@hotmail.com"
+
+git init
+
+git remote add origin git@github.com:ias90/ProyectoSI.git
+
+git add .
+git commit -m "First commit"
+
+git push -u origin master
+
+https://futurestud.io/tutorials/hapi-basic-authentication-with-username-and-password

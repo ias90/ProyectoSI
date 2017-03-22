@@ -1,6 +1,6 @@
 var $ = require('jquery');
 
- var url="https://prueba2-ivanarno.c9users.io/mostrarDocente";
+ var url="https://delta-16172si-ias90.c9users.io/mostrarDocente";
     
    $(document).ready(function () {
   $('#get-data').click(function () {
