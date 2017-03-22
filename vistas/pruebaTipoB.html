@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html>
+<title>EvaluaMet: Forma B: Estudiantes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="utf-8">
+  <meta name="generator" content="jqueryform.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  
+  
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+  <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/w3images/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+
+<link href="../public/jqueryform-53436f/vendor.css" rel="stylesheet">
+
+<style type="text/css">
+body{
+  background-color: transparent;
+}
+
+.jf-form{
+  margin-top: 28px;
+}
+
+.jf-form > form{
+  margin-bottom: 32px;
+}
+
+.jf-option-box{
+  display: none;
+  margin-left: 8px;
+}
+
+.jf-hide{
+  display: none;
+}
+
+.jf-disabled {
+    background-color: #eeeeee;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* 
+overwrite bootstrap default margin-left, because the <label> doesn't contain the <input> element.
+*/
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: 0px;
+}
+
+div.form-group{
+  padding: 8px 8px 4px 8px;
+}
+
+.mainDescription{
+  margin-bottom: 10px;
+}
+.responsive img{
+  width: 100%;
+}
+
+p.error, p.validation-error{
+  padding: 5px;
+}
+
+p.error{
+  margin-top: 10px;
+  color:#a94442;
+}
+
+p.server-error{
+  font-weight: bold;
+}
+
+div.thumbnail{
+  position: relative;
+  text-align: center;
+}
+
+div.thumbnail.selected p{
+  color: #ffffff;
+}
+
+div.thumbnail .glyphicon-ok-circle{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.jf-copyright{color: #888888; display: inline-block; margin: 16px;display:none;}
+
+.form-group.required .control-label:after {
+    color: #dd0000;
+    content: "*";
+    margin-left: 6px;
+}
+
+.submit .btn.disabled, .submit .btn[disabled]{
+  background: transparent;
+  opacity: 0.75;
+}
+
+/* for image option with span text */
+.checkbox label > span, .radio label > span{
+  display: block;
+}
+
+.form-group.inline .control-label,
+.form-group.col-1 .control-label,
+.form-group.col-2 .control-label,
+.form-group.col-3 .control-label
+{
+  display: block;
+}
+
+.form-group.inline div.radio,
+.form-group.inline div.checkbox{
+  display: inline-block;
+}
+
+.form-group.col-1 div.radio,
+.form-group.col-1 div.checkbox{
+  display: block;
+}
+
+.form-group.col-2 div.radio,
+.form-group.col-2 div.checkbox{
+  display: inline-block;
+  width: 48%;
+}
+
+.form-group.col-3 div.radio,
+.form-group.col-3 div.checkbox{
+  display: inline-block;
+  width: 30%;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-text-orange">
+  <ul class="w3-navbar" id="myNav">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/" class="w3-bar-item w3-button w3-hover-orange">HOME</a>
+    <a href="/" class="w3-bar-item w3-button w3-hover-orange w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="/" class="w3-bar-item w3-button w3-hover-orange w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="/pruebaTipoA" class="w3-bar-item w3-button w3-hover-orange w3-hide-small"> PRUEBA TIPO A</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+
+
+
+  
+  <!-- INICIO formulario -->
+  
+  
+  
+<!-- ----------------------------------------------- -->
+<div class="container jf-form">
+<form data-licenseKey="" name="jqueryform-53436f" id="jqueryform-53436f" action='../public/jqueryform-53436f/admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
+<input type="hidden" name="method" value="validateForm">
+<input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
+
+
+<h3 align="center">EvaluaMet: Evaluación estudiantes</h3>
+<div class="form-group f4 required" data-fid="f4">
+  <label class="control-label" for="f4">Fecha:</label>
+
+<div class="input-group date">
+<input type="text" class="form-control datepicker" id="f4" name="f4" value=""   
+    data-rule-required="true"  data-msg-required="Este campo es necesario."
+  data-datepicker-format="dd/mm/yyyy" />
+<span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span></div>
+  
+</div>
+
+
+
+
+<div class="form-group f5 required" data-fid="f5">
+  <label class="control-label" for="f5">Nombre del profesor: </label>
+
+
+<input type="text" class="form-control" id="f5" name="f5" value="" maxlength="20"   
+    data-rule-required="true" data-msg-required="Este campo es necesario." 
+    required pattern="[ñáéíóúA-Za-z ]+" data-msg-pattern="Fórmato inválido"   />
+</div>
+
+
+
+
+<div class="form-group f7 required" data-fid="f7">
+  <label class="control-label" for="f7">Código de la materia: </label>
+
+
+<input type="text" class="form-control" id="f7" name="f7" value=""    
+    data-rule-required="true" data-msg-required="Este campo es necesario." />
+
+
+  
+</div>
+
+
+
+
+<div class="form-group f8 " data-fid="f8">
+  <label class="control-label" for="f8">Sección: </label>
+
+
+<input type="text" class="form-control" id="f8" name="f8" value=""     
+    data-rule-required="true" data-msg-required="Este campo es necesario."
+    required pattern="[0-9]+"/>
+
+
+  
+</div>
+<div>
+<p><h2>Evalue los siguientes aspectos del profesor en este curso seleccionando la casilla que mejor refleje su parecer al respecto. Esta encuesta es anónima y de carácter confidencial</h2></p>
+</div>
+
+
+<div>
+<h1 align="center">El profesor:</h1>  
+</div>
+
+<div class="form-group f10 required inline" data-fid="f10">
+  <label class="control-label" for="f10">1) comunica los temas de manera comprensible</label>
+
+<div class="radio">
+    <input  id="f10_1" name="f10" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f10_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f10_2" name="f10" checked type="radio" value="2"  >
+    <label  for="f10_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f10_3" name="f10" checked type="radio" value="3"  >
+    <label  for="f10_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f10_4" name="f10" checked type="radio" value="4"  >
+    <label  for="f10_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f11 required inline" data-fid="f11">
+  <label class="control-label" for="f11">2) explica en detalle los objetivos de la materia</label>
+
+<div class="radio">
+    <input  id="f11_1" name="f11" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f11_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f11_2" name="f11" checked type="radio" value="2"  >
+    <label  for="f11_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f11_3" name="f11" checked type="radio" value="3"  >
+    <label  for="f11_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f11_4" name="f11" checked type="radio" value="4"  >
+    <label  for="f11_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f12 required inline" data-fid="f12">
+  <label class="control-label" for="f12">3) enriquese las exposisiones con ejemplos de interes</label>
+
+<div class="radio">
+    <input  id="f12_1" name="f12" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f12_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f12_2" name="f12" checked type="radio" value="2"  >
+    <label  for="f12_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f12_3" name="f12" checked type="radio" value="3"  >
+    <label  for="f12_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f12_4" name="f12" checked type="radio" value="4"  >
+    <label  for="f12_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f13 required inline" data-fid="f13">
+  <label class="control-label" for="f13">4) relaciona sistemáticamente los objetivos con los objetivos de la asignatura</label>
+
+<div class="radio">
+    <input  id="f13_1" name="f13" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f13_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f13_2" name="f13" checked type="radio" value="2"  >
+    <label  for="f13_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f13_3" name="f13" checked type="radio" value="3"  >
+    <label  for="f13_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f13_4" name="f13" checked type="radio" value="4"  >
+    <label  for="f13_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f14 required inline" data-fid="f14">
+  <label class="control-label" for="f14">5) ofrece materiales que propician el aprendizaje</label>
+
+<div class="radio">
+    <input  id="f14_1" name="f14" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f14_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f14_2" name="f14" checked type="radio" value="2"  >
+    <label  for="f14_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f14_3" name="f14" checked type="radio" value="3"  >
+    <label  for="f14_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f14_4" name="f14" checked type="radio" value="4"  >
+    <label  for="f14_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f15 required inline" data-fid="f15">
+  <label class="control-label" for="f15">6) aclara las dudas que se presentan a lo largo del curso</label>
+
+<div class="radio">
+    <input  id="f15_1" name="f15" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f15_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f15_2" name="f15" checked type="radio" value="2"  >
+    <label  for="f15_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f15_3" name="f15" checked type="radio" value="3"  >
+    <label  for="f15_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f15_4" name="f15" checked type="radio" value="4"  >
+    <label  for="f15_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f16 required inline" data-fid="f16">
+  <label class="control-label" for="f16">7) establece y comunica previamente los planes de evaluación</label>
+
+<div class="radio">
+    <input  id="f16_1" name="f16" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f16_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f16_2" name="f16" checked type="radio" value="2"  >
+    <label  for="f16_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f16_3" name="f16" checked type="radio" value="3"  >
+    <label  for="f16_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f16_4" name="f16" checked type="radio" value="4"  >
+    <label  for="f16_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f17 required inline" data-fid="f17">
+  <label class="control-label" for="f17">8) brinda oportunamente retroalimentación sobre los resultados de las evaluaciones</label>
+
+<div class="radio">
+    <input  id="f17_1" name="f17" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f17_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f17_2" name="f17" checked type="radio" value="2"  >
+    <label  for="f17_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f17_3" name="f17" checked type="radio" value="3"  >
+    <label  for="f17_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f17_4" name="f17" checked type="radio" value="4"  >
+    <label  for="f17_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f18 required inline" data-fid="f18">
+  <label class="control-label" for="f18">9) conduce la interacción grupal y estimula la argumentación en los integrantes del grupo</label>
+
+<div class="radio">
+    <input  id="f18_1" name="f18" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f18_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f18_2" name="f18" checked type="radio" value="2"  >
+    <label  for="f18_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f18_3" name="f18" checked type="radio" value="3"  >
+    <label  for="f18_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f18_4" name="f18" checked type="radio" value="4"  >
+    <label  for="f18_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f19 required inline" data-fid="f19">
+  <label class="control-label" for="f19">10) incentiva la búsqueda de información complementaria para el curso</label>
+
+<div class="radio">
+    <input  id="f19_1" name="f19" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f19_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f19_2" name="f19" checked type="radio" value="2"  >
+    <label  for="f19_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f19_3" name="f19" checked type="radio" value="3"  >
+    <label  for="f19_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f19_4" name="f19" checked type="radio" value="4"  >
+    <label  for="f19_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f20 required inline" data-fid="f20">
+  <label class="control-label" for="f20">11) mantiene en esta asignatura un balance entre diferentes actividades: discuiones teóricas, sesiones prácticas, aplicaciones diversas y relacionadas con la asignatura</label>
+
+<div class="radio">
+    <input  id="f20_1" name="f20" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f20_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f20_2" name="f20" checked type="radio" value="2"  >
+    <label  for="f20_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f20_3" name="f20" checked type="radio" value="3"  >
+    <label  for="f20_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f20_4" name="f20" checked type="radio" value="4"  >
+    <label  for="f20_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="form-group f21 required inline" data-fid="f21">
+  <label class="control-label" for="f21">12) propicia la responsabilidad y la modela a su conducta</label>
+
+<div class="radio">
+    <input  id="f21_1" name="f21" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f21_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f21_2" name="f21" checked type="radio" value="2"  >
+    <label  for="f21_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f21_3" name="f21" checked type="radio" value="3"  >
+    <label  for="f21_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f21_4" name="f21" checked type="radio" value="4"  >
+    <label  for="f21_4">
+      4
+    </label>
+  </div>
+
+  
+</div>
+
+<div><h2 align="center">Aspectos Complementarios</h2></div>
+
+
+<div class="form-group f22 required inline" data-fid="f22">
+  <label class="control-label" for="f22">13) En general, la calidad docente del profesor es:</label>
+
+<div class="radio">
+    <input  id="f22_1" name="f22" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f22_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f22_2" name="f22" checked type="radio" value="2"  >
+    <label  for="f22_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f22_3" name="f22" checked type="radio" value="3"  >
+    <label  for="f22_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f22_4" name="f22" checked type="radio" value="4"  >
+    <label  for="f22_4">
+      4
+    </label>
+  </div>
+
+
+  <p id="f22-help-block" class="description">Bajo ------------ Alto</p>
+  
+</div>
+
+
+
+
+<div class="form-group f23 required inline" data-fid="f23">
+  <label class="control-label" for="f23">14) Su disposición a tomar otro curso con este profesor es:</label>
+
+<div class="radio">
+    <input  id="f23_1" name="f23" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f23_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f23_2" name="f23" checked type="radio" value="2"  >
+    <label  for="f23_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f23_3" name="f23" checked type="radio" value="3"  >
+    <label  for="f23_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f23_4" name="f23" checked type="radio" value="4"  >
+    <label  for="f23_4">
+      4
+    </label>
+  </div>
+
+
+  <p id="f23-help-block" class="description">Bajo ------------ Alto</p>
+  
+</div>
+
+
+
+
+<div class="form-group f24 required inline" data-fid="f24">
+  <label class="control-label" for="f24">15) Su aprovechamiento de esta materia como estudiante está siendo:</label>
+
+<div class="radio">
+    <input  id="f24_1" name="f24" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f24_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f24_2" name="f24" checked type="radio" value="2"  >
+    <label  for="f24_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f24_3" name="f24" checked type="radio" value="3"  >
+    <label  for="f24_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f24_4" name="f24" checked type="radio" value="4"  >
+    <label  for="f24_4">
+      4
+    </label>
+  </div>
+
+
+  <p id="f24-help-block" class="description">Bajo ------------ Alto</p>
+  
+</div>
+
+
+
+
+<div class="form-group f25 required inline" data-fid="f25">
+  <label class="control-label" for="f25">16) Su dedicación y esfuerzo como estudiante en este curso está siendo:</label>
+
+<div class="radio">
+    <input  id="f25_1" name="f25" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f25_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f25_2" name="f25" checked type="radio" value="2"  >
+    <label  for="f25_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f25_3" name="f25" checked type="radio" value="3"  >
+    <label  for="f25_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f25_4" name="f25" checked type="radio" value="4"  >
+    <label  for="f25_4">
+      4
+    </label>
+  </div>
+
+
+  <p id="f25-help-block" class="description">Bajo ------------ Alto</p>
+  
+</div>
+
+
+
+
+<div class="form-group f26 required inline" data-fid="f26">
+  <label class="control-label" for="f26">17) El texto y la bibliografía sugerida es adecuada, útil:</label>
+
+<div class="radio">
+    <input  id="f26_1" name="f26" checked type="radio" value="1" 
+    data-rule-required="true"  >
+    <label  for="f26_1">
+      1
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f26_2" name="f26" checked type="radio" value="2"  >
+    <label  for="f26_2">
+      2
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f26_3" name="f26" checked type="radio" value="3"  >
+    <label  for="f26_3">
+      3
+    </label>
+  </div>
+
+  <div class="radio">
+    <input  id="f26_4" name="f26" checked type="radio" value="4"  >
+    <label  for="f26_4">
+      4
+    </label>
+  </div>
+
+
+  <p id="f26-help-block" class="description">Bajo ------------ Alto</p>
+  
+</div>
+
+
+
+<div class="form-group submit f0 " data-fid="f0" style="position: relative;">
+  <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
+
+  <div class="progress" style="display: none; z-index: -1; position: absolute;">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
+      Enviar
+  </button>
+
+</div><div class="clearfix"></div>
+
+<div class="submit">
+  <p>
+    Por favor completa los campos requeridos (*).  </p>
+</div>
+
+<div class="clearfix"></div>
+
+
+</form>
+</div>
+<div class="container jf-thankyou" style="display:none;" data-redirect="" data-seconds="10">
+  <h3>Tu respuesta ha sido enviada, Gracias!</h3>
+</div>
+
+
+
+
+
+
+<!-- fin formulario -->
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-deep-orange w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#jqueryform-53436f" class="w3-btn w3-padding w3-orange w3-hover-amber"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+  
+</footer>
+ 
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-deep-orange w3-opacity w3-hover-opacity-off";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-deep-orange w3-opacity w3-hover-opacity-off", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="../public/jqueryform-53436f/vendor.js" ></script>
+
+<script src="../public/jqueryform-53436f/jqueryform.com.min.js?ver=v1.2&id=jqueryform-53436f" ></script>
+
+
+<script type="text/javascript">
+
+  // start jqueryform initialization
+  // --------------------------------
+  JF.init('#jqueryform-53436f');
+
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

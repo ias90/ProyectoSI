@@ -1,0 +1,15 @@
+.section--center {
+  max-width: 896px;
+}
+main {
+  margin-top: 16px;
+}
+#pensamiento {
+  resize: none;
+}
+.pensamiento-data .creation {
+  float: right;
+}
+.pensamiento-data .iconos {
+  padding-top: 16px;
+}

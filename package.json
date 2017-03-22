@@ -1,0 +1,35 @@
+{
+  "name": "proyecto",
+  "version": "0.0.1",
+  "main": "server2.js",
+  "dependencies": {
+    "async": "~0.2.8",
+    "basic": "^2.0.1",
+    "bcrypt": "^1.0.2",
+    "bootstrap": "^3.3.7",
+    "express": "~3.2.4",
+    "handlebars": "^4.0.6",
+    "hapi": "^16.1.0",
+    "hapi-auth-basic": "^4.2.0",
+    "hapi-mysql": "^1.0.15",
+    "hapi-sequelize": "^3.0.4",
+    "inert": "^4.1.0",
+    "joi": "^10.2.1",
+    "jquery": "^3.1.1",
+    "mysql": "^2.13.0",
+    "mysql2": "^1.1.2",
+    "sequelize": "^3.30.1",
+    "sequelize-cli": "^2.5.1",
+    "server": "^1.0.0-alpha.17",
+    "socket.io": "~0.9.14",
+    "swig": "^1.4.2",
+    "vision": "^4.1.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "license": "ISC"
+}

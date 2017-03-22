@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html>
+<title>EvaluaMet: Forma A: Profesores</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="utf-8">
+  <meta name="generator" content="jqueryform.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  
+  
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+  <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/w3images/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+
+<link href="../public/jqueryform-53436f/vendor.css" rel="stylesheet">
+
+<style type="text/css">
+body{
+  background-color: transparent;
+}
+
+.jf-form{
+  margin-top: 28px;
+}
+
+.jf-form > form{
+  margin-bottom: 32px;
+}
+
+.jf-option-box{
+  display: none;
+  margin-left: 8px;
+}
+
+.jf-hide{
+  display: none;
+}
+
+.jf-disabled {
+    background-color: #eeeeee;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* 
+overwrite bootstrap default margin-left, because the <label> doesn't contain the <input> element.
+*/
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: 0px;
+}
+
+div.form-group{
+  padding: 8px 8px 4px 8px;
+}
+
+.mainDescription{
+  margin-bottom: 10px;
+}
+.responsive img{
+  width: 100%;
+}
+
+p.error, p.validation-error{
+  padding: 5px;
+}
+
+p.error{
+  margin-top: 10px;
+  color:#a94442;
+}
+
+p.server-error{
+  font-weight: bold;
+}
+
+div.thumbnail{
+  position: relative;
+  text-align: center;
+}
+
+div.thumbnail.selected p{
+  color: #ffffff;
+}
+
+div.thumbnail .glyphicon-ok-circle{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.jf-copyright{color: #888888; display: inline-block; margin: 16px;display:none;}
+
+.form-group.required .control-label:after {
+    color: #dd0000;
+    content: "*";
+    margin-left: 6px;
+}
+
+.submit .btn.disabled, .submit .btn[disabled]{
+  background: transparent;
+  opacity: 0.75;
+}
+
+/* for image option with span text */
+.checkbox label > span, .radio label > span{
+  display: block;
+}
+
+.form-group.inline .control-label,
+.form-group.col-1 .control-label,
+.form-group.col-2 .control-label,
+.form-group.col-3 .control-label
+{
+  display: block;
+}
+
+.form-group.inline div.radio,
+.form-group.inline div.checkbox{
+  display: inline-block;
+}
+
+.form-group.col-1 div.radio,
+.form-group.col-1 div.checkbox{
+  display: block;
+}
+
+.form-group.col-2 div.radio,
+.form-group.col-2 div.checkbox{
+  display: inline-block;
+  width: 48%;
+}
+
+.form-group.col-3 div.radio,
+.form-group.col-3 div.checkbox{
+  display: inline-block;
+  width: 30%;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-text-orange">
+  <ul class="w3-navbar" id="myNav">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/" class="w3-bar-item w3-button w3-hover-orange">HOME</a>
+    <a href="/" class="w3-bar-item w3-button w3-hover-orange w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="/pruebaTipoB" class="w3-bar-item w3-button w3-hover-orange w3-hide-small"> PRUEBA TIPO B</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+
+
+<!-- Container (About Section) -->
+
+
+  
+  
+  <!-- INICIO formulario -->
+  
+  
+  
+<!-- ----------------------------------------------- -->
+<div class="container jf-form">
+<form data-licenseKey="" name="jqueryform-53436f" id="jqueryform-53436f" action='https://prueba2-ivanarno.c9users.io/insertarPruebaA' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
+<input type="hidden" name="method" value="validateForm">
+<input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
+
+
+<h3 align="center">EvaluaMet: Evaluación profesores</h3>
+<div class="form-group fecha required" data-fid="fecha">
+  <label class="control-label" for="fecha">Fecha:</label>
+
+<div class="input-group date">
+<input type="text" class="form-control datepicker" id="fecha" name="fecha" value=""   
+    data-rule-required="true"  data-msg-required="Este campo es necesario."
+  data-datepicker-format="dd/mm/yyyy" />
+<span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span></div>
+  
+</div>
+
+
+
+
+<div class="form-group nombreP required " data-fid="nombreP">
+  
+      <label class="control-label " for="nombreP">Nombre del profesor: </label>
+
+
+        <input type="text" class="form-control " id="nombreP" name="nombreP" value="" maxlength="20"   
+         data-rule-required="true" data-msg-required="Este campo es necesario." 
+        required pattern="[ñáéíóúA-Za-z ]+" data-msg-pattern="Fórmato inválido"   />
+
+</div>
+
+
+
+
+<div class="form-group codigoM required" data-fid="codigoM">
+  <label class="control-label" for="codigoM">Código de la materia: </label>
+
+
+<input type="text" class="form-control" id="codigoM" name="codigoM" value=""    
+    data-rule-required="true" data-msg-required="Este campo es necesario." />
+
+
+  
+</div>
+
+
+
+
+<div class="form-group seccion " data-fid="seccion">
+  <label class="control-label" for="seccion">Sección: </label>
+
+
+<input type="text" class="form-control" id="seccion" name="seccion" value=""     
+    data-rule-required="true" data-msg-required="Este campo es necesario."
+    required pattern="[0-9]+"/>
+
+
+  
+</div>
+<div>
+<p><h4>Calificación de los factores de evaluación: En una escala de evaluación continua de 5 a 1, donde 5 significa que la presencia del factor es ALTAMENTE SATISFACTORIA y 1 que la presencia del factor es INSATISFACTORIA, califique al evaluado en cualquier punto de esa escala (puede trabajar con decimales, escribiendolos con ' . ') y coloque el puntaje en la casilla correspondiente. </h4></p>
+</div>
+
+
+<div>
+<h1 align="center">El Profesor conoce a la Unimet, su misión, sus valores y los practica mostrando sentido de pertenencia cuando:</h1>  
+</div>
+
+<div class="form-group o1 required" data-fid="o1">
+  <label class="control-label" for="o1"> Muestra disposición para entender y satisfacer necesidades de la dependencia </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" name="o1" id="o" value=""   
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+<div class="form-group o2 required" data-fid="o2">
+  <label class="control-label" for="o2"> Practica y promueve la honestidad, el respeto, la excelencia y la responsabilidad </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" name="o2" id="o" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+<input type="hidden" id="total" name"total">
+
+
+
+
+<div class="form-group o3 required" data-fid="o3">
+  <label class="control-label" for="o3"> Conoce, da a conocer y respeta las normas y reglamentos </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" name="o3" id="o" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group o4 required" data-fid="o4">
+  <label class="control-label" for="o4">Respeta los compromisos y las normas establecidas en los grupos o equipos de trabajo </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" name="o4" id="o" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group o5 required" data-fid="o5">
+  <label class="control-label" for="o5"> Participa en Comisiones o Asociaciones, institucionales o de la dependencia </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" name="o5" id="o" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group o6 required" data-fid="o6">
+  <label class="control-label" for="o6">Cuida su ambiente de trabajo</label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1" tName="o" name="o6" id="o" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group o7 required" data-fid="o7">
+  <label class="control-label" for="o7">Cuida su aspecto personal</label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" name="o7" id="o" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group o8 required" data-fid="o8">
+  <label class="control-label" for="o8">  Acepta el proceso de evaluación como un medio para identificar las oportunidades de mejora </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" name="o8" id="o" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group o9 required" data-fid="o9">
+  <label class="control-label" for="o9">  Representa a la Universidad con sentido de pertenencia </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1 " tName="o" id="o" name="o9" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group o10 required" data-fid="o10">
+  <label class="control-label" for="o10"> Internaliza con sentido de pertenencia políticas y objetivos de la institución </label>
+
+
+<input onblur="findTotal()" type="text" class="form-control-1" id="o" name="o10" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+<input type="text" id="valor" name="valor" class="form-control-9" onblur="sumt()">
+
+
+<script type="text/javascript">
+function findTotal(){
+    var arr = document.getElementsByClassName('form-control-1');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor").value = tot/10;
+   
+}
+
+</script>
+
+
+
+<div>
+<h1 align="center">El Profesor evidencia capacidad para analizar, manejar y evaluar situaciones cuando:</h1>  
+</div>
+
+
+<div class="form-group i1 required" data-fid="i1">
+  <label class="control-label" for="i1"> Toma decisiones oportunas</label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " id="i" name="i1" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i2 required" data-fid="i2">
+  <label class="control-label" for="i2">  Demuestra habilidad para expresarse en forma oral y escrita</label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i2" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i3 required" data-fid="i3">
+  <label class="control-label" for="i3">   Se maneja con ecuanimidad, prudencia, cortesía y discreción en situaciones de conflicto </label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i3" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i4 required" data-fid="i4">
+  <label class="control-label" for="i4"> Demuestra capacidad para verificar la congruencia entre lo que se dice y lo que se hace </label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i4" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i5 required" data-fid="i5">
+  <label class="control-label" for="i5"> Es oportuno en sus intervenciones</label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i5" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i6 required" data-fid="i6">
+  <label class="control-label" for="i6"> Manifiesta y demuestra capacidad de negociación</label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i6" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i7 required" data-fid="i7">
+  <label class="control-label" for="i7"> Se comunica de manera cortés y respetuosa con secretarias, colegas, supervisados y alumnos</label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i7" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i8 required" data-fid="i8">
+  <label class="control-label" for="i8"> Es discreto en la solución de conflictos</label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i8" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group i9 required" data-fid="i9">
+  <label class="control-label" for="i9"> En situaciones de conflicto respeta los canales de autoridad</label>
+
+
+<input onblur="findTotal2()" type="text" class="form-control-2 " name="i9" id="i" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+<input type="text" id="valor2" name="valor2" class="form-control-9" onblur="sumt()">
+
+
+<script type="text/javascript">
+function findTotal2(){
+    var arr = document.getElementsByClassName('form-control-2');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor2").value = tot/9;
+   
+}
+
+</script>
+
+
+<div>
+<h1 align="center">El Profesor demuestra habilidad en la participación dentro de su equipo de trabajo, cuando:</h1>  
+</div>
+
+
+<div class="form-group f24 required" data-fid="f24">
+  <label class="control-label" for="f24"> Asiste a las reuniones de equipo y está dispuesto a ofrecer conocimiento, información y experticia para el logro de objetivos comunes.</label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f24" name="f24" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f25 required" data-fid="f25">
+  <label class="control-label" for="f25"> Comparte con colegas sus experiencias docentes</label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f25" name="f25" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f26 required" data-fid="f26">
+  <label class="control-label" for="f26"> Aporta conocimientos valiosos sobre la materia que dicta, a través de la coordinación de la misma</label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f26" name="f26" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f27 required" data-fid="f27">
+  <label class="control-label" for="f27">Es eficiente en la planificación de tareas o actividades relacionadas con su equipo de trabajo</label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f27" name="f27" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f28 required" data-fid="f28">
+  <label class="control-label" for="f28"> Es colaborador, conciliador y sabe escuchar</label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f28" name="f28" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f29 required" data-fid="f29">
+  <label class="control-label" for="f29">Evidencia interés por lograr acuerdos y consensos con el grupo. </label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f29" name="f29" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f30 required" data-fid="f30">
+  <label class="control-label" for="f30"> Participa como jurado en trabajos y/o tesis de grado. </label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f30" name="f30" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f31 required" data-fid="f31">
+  <label class="control-label" for="f31"> Muestra disposición a actuar como tutor en trabajos y/o tesis de grado. </label>
+
+
+<input onblur="findTotal3()" type="text" class="form-control-3 " id="f31" name="f31" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+<input type="text" id="valor3" name="valor3" class="form-control-9" onblur="sumt()">
+
+
+<script type="text/javascript">
+function findTotal3(){
+    var arr = document.getElementsByClassName('form-control-3');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor3").value = tot/8;
+   
+}
+
+</script>
+
+
+
+<div>
+<h1 align="center">El Profesor muestra capacidad para optimizar el proceso enseñanza-aprendizaje cuando:</h1>  
+</div>
+
+
+
+<div class="form-group f32 required" data-fid="f32">
+  <label class="control-label" for="f32"> Conoce la materia a profundidad</label>
+
+
+<input onblur="findTotal4()" type="text" class="form-control-4 " id="f32" name="f32" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f33 required" data-fid="f33">
+  <label class="control-label" for="f33"> Analiza con el grupo de estudiantes, al inicio del curso, el programa de la materia, haciendo énfasis en los objetivos, contenidos, actividades y formas de evaluación del mismo.</label>
+
+
+<input onblur="findTotal4()" type="text" class="form-control-4 " id="f33" name="f33" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f34 required" data-fid="f34">
+  <label class="control-label" for="f34"> Expone los conceptos con claridad y precisión y promueve que comprendan el por qué de las cosas </label>
+
+
+<input onblur="findTotal4()" type="text" class="form-control-4 " id="f34" name="f34" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f35 required" data-fid="f35">
+  <label class="control-label" for="f35">Promueve el pensamiento crítico y utiliza técnicas que favorecen el debate, la discusión y las propuestas de solución </label>
+
+
+<input onblur="findTotal4()" type="text" class="form-control-4 " id="f35" name="f35" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f36 required" data-fid="f36">
+  <label class="control-label" for="f36">  Encarga trabajos que desarrollan la capacidad de identificar y solucionar problemas</label>
+
+
+<input onblur="findTotal4()" type="text" class="form-control-4 " id="f36" name="f36" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+                                                                                     
+
+<input type="text" id="valor4" name="valor4" class="form-control-9" onblur="sumt()">
+
+
+<script type="text/javascript">
+function findTotal4(){
+    var arr = document.getElementsByClassName('form-control-4');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor4").value = tot/5;
+   
+}
+
+</script>
+
+
+<div>
+<h1 align="center">El Profesor demuestra interés en actualizarse y desarrollarse cuando:</h1>  
+</div>
+
+
+<div class="form-group f37 required" data-fid="f37">
+  <label class="control-label" for="f37"> Se mantiene activo en el área de su competencia a nivel teórico y práctico, suministrando información vigente a sus alumnos</label>
+
+
+<input onblur="findTotal5()" type="text" class="form-control-5 " id="f37" name="f37" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f38 required" data-fid="f38">
+  <label class="control-label" for="f38">Intercambia, expone o exhibe ideas novedosas sobre su materia</label>
+
+
+<input onblur="findTotal5()" type="text" class="form-control-5 " id="f38" name="f38" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f39 required" data-fid="f39">
+  <label class="control-label" for="f39"> Participa en programas de actualización de la Unimet</label>
+
+
+<input onblur="findTotal5()" type="text" class="form-control-5 " id="f39" name="f39" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f40 required" data-fid="f40">
+  <label class="control-label" for="f40"> Participa en programas de investigación de la Unimet</label>
+
+
+<input onblur="findTotal5()" type="text" class="form-control-5 " id="f40" name="f40" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f41 required" data-fid="f41">
+  <label class="control-label" for="f41"> Participa en otros programas de actualización profesional, acordes con las metas de la dependencia o de la Universidad </label>
+
+
+<input onblur="findTotal5()" type="text" class="form-control-5 " id="f41" name="f41" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f42 required" data-fid="f42">
+  <label class="control-label" for="f42">Organiza y dicta algún seminario o taller dentro de su dependencia o a nivel institucional </label>
+
+
+<input onblur="findTotal5()" type="text" class="form-control-5 " id="f42" name="f42" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f43 required" data-fid="f43">
+  <label class="control-label" for="f43"> Diseña algún curso o parte de uno, integrando actividades de aprendizaje que requieren el uso de la tecnología </label>
+
+
+<input onblur="findTotal5()" type="text" class="form-control-5 " id="f43" name="f43" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+<input type="text" id="valor5" name="valor5" class="form-control-9" onblur="sumt()">
+
+
+<script type="text/javascript">
+function findTotal5(){
+    var arr = document.getElementsByClassName('form-control-5');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor5").value = tot/7;
+   
+}
+
+</script>
+
+<div>
+<h1 align="center">El Profesor muestra capacidad para analizar, reflexionar, innovar, mejorar y hasta cuestionar su propia actitud y gestión, cuando:</h1>  
+</div>
+
+
+
+<div class="form-group f44 required" data-fid="f44">
+  <label class="control-label" for="f44"> Muestra apertura al diálogo y a formas de pensar diferentes a la suya </label>
+
+
+<input onblur="findTotal6()" type="text" class="form-control-6 " id="f44" name="f44" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f45 required" data-fid="f45">
+  <label class="control-label" for="f45"> Es exigente consigo mismo</label>
+
+
+<input onblur="findTotal6()" type="text" class="form-control-6 " id="f45" name="f45" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f46 required" data-fid="f46">
+  <label class="control-label" for="f46"> Demuestra aceptar observaciones externas, buscando siempre optimizar su rol</label>
+
+
+<input onblur="findTotal6()" type="text" class="form-control-6 " id="f46" name="f46" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+<input type="text" id="valor6" name="valor6" class="form-control-9" onblur="sumt()">
+
+
+<script type="text/javascript">
+function findTotal6(){
+    var arr = document.getElementsByClassName('form-control-6');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor6").value = tot/3;
+   
+}
+
+</script>
+
+<div>
+<h1 align="center">El Profesor manifiesta interés por trabajar, superando stándares de excelencia, cuando:</h1>  
+</div>
+
+
+<div class="form-group f47 required" data-fid="f47">
+  <label class="control-label" for="f47">  Muestra interés y satisfacción en su trabajo</label>
+
+
+<input onblur="findTotal7()" type="text" class="form-control-7 " id="f47" name="f47" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f48 required" data-fid="f48">
+  <label class="control-label" for="f48"> Promueve actividades innovadoras y de cambio para la dependencia, buscando siempre las oportunidades de mejora </label>
+
+
+<input onblur="findTotal7()" type="text" class="form-control-7 " id="f48" name="f48" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f49 required" data-fid="f49">
+  <label class="control-label" for="f49"> Es exigente en el logro de sus objetivos </label>
+
+
+<input onblur="findTotal7()" type="text" class="form-control-7 " id="f49" name="f49" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+<input type="text" id="valor7" name="valor7" class="form-control-9" onblur="sumt()">
+
+
+<script type="text/javascript">
+function findTotal7(){
+    var arr = document.getElementsByClassName('form-control-7');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor7").value = tot/3;
+   
+}
+
+</script>
+
+
+<div>
+<h1 align="center">El Profesor es responsable y exhibe un alto nivel de compromiso con su trabajo, cuando:</h1>  
+</div>
+
+
+<div class="form-group f50 required" data-fid="f50">
+  <label class="control-label" for="f50"> Asiste a todas sus sesiones, cumple con el tiempo reglamentario de clase </label>
+
+
+<input onblur="findTotal8()" type="text" class="form-control-8 " id="f50" name="f50" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f51 required" data-fid="f51">
+  <label class="control-label" for="f51"> Evidencia compromiso con estudiantes y colegas</label>
+
+
+<input onblur="findTotal8()" type="text" class="form-control-8 " id="f51" name="f51" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f52 required" data-fid="f52">
+  <label class="control-label" for="f52"> Evidencia compromiso con la administración del curso cumpliendo con el programa establecido para la materia. </label>
+
+
+<input onblur="findTotal8()" type="text" class="form-control-8 " id="f52" name="f52" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f53 required" data-fid="f53">
+  <label class="control-label" for="f53">Entrega puntualmente las actas, informes, encuestas, y recaudos solicitados por sus superiores o coordinadores. </label>
+
+
+<input onblur="findTotal8()" type="text" class="form-control-8 " id="f53" name="f53" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f54 required" data-fid="f54">
+  <label class="control-label" for="f54"> Es puntual en todas las actividades de clase, reuniones, etc</label>
+
+
+<input onblur="findTotal8()" type="text" class="form-control-8 " id="f54" name="f54" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+
+
+
+<div class="form-group f55 required" data-fid="f55">
+  <label class="control-label" for="f55"> Está disponible en el período intersemestral</label>
+
+
+<input onblur="findTotal8()" type="text" class="form-control-8 " id="f55" name="f55" value=""    
+    data-rule-number="true" 
+    data-rule-required="true" 
+    data-rule-min="1"  
+    data-rule-max="5"    />
+
+  
+</div>
+
+<input type="text" id="valor8" name="valor8" class="form-control-9" onblur="sumt()">
+
+<input type="hidden" id="valort" name="valort">
+
+
+<script type="text/javascript">
+function findTotal8(){
+    var arr = document.getElementsByClassName('form-control-8');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    
+    console.log(tot);
+   document.getElementById("valor8").value = tot/6;
+} 
+   
+   
+</script>
+
+
+<script>
+  //SUMA TOTAL DEL FORMULARIO
+  function sumt(){
+    var arr = document.getElementsByClassName('form-control-9');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    console.log(tot);
+   document.getElementById("valort").value = tot/8;   
+}
+</script>
+
+<div class="form-group submit f0 " data-fid="f0" style="position: relative;">
+  <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
+
+  <div class="progress" style="display: none; z-index: -1; position: absolute;">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
+      Enviar
+  </button>
+
+</div><div class="clearfix"></div>
+
+<div class="submit">
+  <p>
+    Por favor completa los campos requeridos (*).</p>
+</div>
+
+<div class="clearfix"></div>
+
+
+</form>
+</div>
+<div class="container jf-thankyou" style="display:none;" data-redirect="" data-seconds="5">
+  <h3>Tu respuesta ha sido enviada, Gracias!</h3>
+</div>
+
+
+
+
+
+
+<!-- fin formulario -->
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-deep-orange w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#jqueryform-53436f" class="w3-btn w3-padding w3-orange w3-hover-amber"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+  
+</footer>
+ 
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-deep-orange w3-opacity w3-hover-opacity-off";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-deep-orange w3-opacity w3-hover-opacity-off", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="../public/jqueryform-53436f/vendor.js" ></script>
+
+<script src="../public/jqueryform-53436f/jqueryform.com.min.js?ver=v1.2&id=jqueryform-53436f" ></script>
+
+
+<script type="text/javascript">
+
+  // start jqueryform initialization
+  // --------------------------------
+  JF.init('#jqueryform-53436f');
+
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
